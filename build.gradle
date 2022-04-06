@@ -30,6 +30,8 @@ dependencies {
 			}
 	testImplementation("org.assertj:assertj-core:3.10.0")
     implementation 'junit:junit:4.12'
+    testImplementation group: 'com.openpojo', name: 'openpojo', version: '0.8.3'
+    
 }
 
 tasks.named('test') {
