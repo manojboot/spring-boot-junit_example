@@ -30,4 +30,11 @@ public class LoginControllerTest {
 		assertEquals(200, users.getStatusCodeValue());
 	}
 	
+	@Test
+	public void testGetHello() {
+		ResponseEntity<String> hello = loginController.hello();
+		assertNotNull(hello);
+		assertEquals(200, hello.getStatusCodeValue());
+	}
+	
 }
